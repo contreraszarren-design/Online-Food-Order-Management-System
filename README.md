@@ -18,14 +18,13 @@ This project aims to:
 - Provide a simple and efficient ordering flow
 ##
 ### <p align="center"> ⸻𓆩𝒮𝓎𝓈𝓉𝑒𝓂 𝒞𝑜𝓃𝒸𝑒𝓅𝓉𓆪⸻ </p>
- This system uses basic programming logic and data structures:
+ ᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴜꜱᴇꜱ ʙᴀꜱɪᴄ ᴘʀᴏɢʀᴀᴍᴍɪɴɢ ʟᴏɢɪᴄ ᴀɴᴅ ᴅᴀᴛᴀ ꜱᴛʀᴜᴄᴛᴜʀᴇꜱ:   
+- **Qᴜᴇᴜᴇ (ꜰɪꜰᴏ)** → ʜᴀɴᴅʟᴇꜱ ɴᴏʀᴍᴀʟ ᴏʀᴅᴇʀꜱ
+- **ᴘʀɪᴏʀɪᴛʏ Qᴜᴇᴜᴇ** → ʜᴀɴᴅʟᴇꜱ ᴜʀɢᴇɴᴛ ᴏʀᴅᴇʀꜱ ꜰɪʀꜱᴛ
+- **ꜱᴛᴀᴄᴋ** → ꜱᴛᴏʀᴇꜱ ʟᴀꜱᴛ ᴀᴄᴛɪᴏɴ ꜰᴏʀ ᴜɴᴅᴏ
+- **ʟᴏᴏᴘꜱ & ᴄᴏɴᴅɪᴛɪᴏɴꜱ** → ᴄᴏɴᴛʀᴏʟꜱ ꜱʏꜱᴛᴇᴍ ꜰʟᴏᴡ
 
- - **Queue (FIFO)** → Handles normal orders  
- - **Priority Queue** → Handles urgent orders first  
- - **Stack** → Stores last action for undo  
- - **Loops & Conditions** → Controls system flow
-
-  =============================================
+##
 
 Online Food Order Management System
 1. ➕ Add Normal Order  
@@ -34,11 +33,10 @@ Online Food Order Management System
 4. 📋 View Queues  
 5. 🕘 View Order History  
 6. ↩️ Undo Last Order  
-7. ❌ Exit Program  
+7. ❌ Exit Program
 
-=============================================
-
-### Sample Output
+##
+## 𝓢𝓪𝓶𝓹𝓵𝓮 𝓸𝓾𝓽𝓹𝓾𝓽
 
 Add Normal Order
 Add Priority Order
@@ -46,13 +44,11 @@ Process Order
 
 Enter choice: 1
 
-Enter customer name: Juan
+Enter customer name: Your Name
 
-Enter food item: Burger
+Enter food item: Your Food
 
 Normal order added.
-
-=============================================
 
 # ♡(◕‿◕)♡ 𝓢𝓞𝓤𝓡𝓒𝓔 𝓒𝓞𝓓𝓔 ♡(◕‿◕)♡
 
