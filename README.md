@@ -45,7 +45,9 @@ Add Priority Order
 Process Order
 
 Enter choice: 1
+
 Enter customer name: Juan
+
 Enter food item: Burger
 
 Normal order added.
