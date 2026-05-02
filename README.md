@@ -1,20 +1,22 @@
-# <p align="center"> Online Food Order System </p>
+# <p align="center"> ✧･ﾟ: *✧･ﾟ:* 𝓞𝓷𝓵𝓲𝓷𝓮 𝓕𝓸𝓸𝓭 𝓞𝓻𝓭𝓮𝓻𝓲𝓷𝓰 𝓢𝔂𝓼𝓽𝓮𝓶 ✧･ﾟ: *✧･ﾟ:* </p>
 
-An Online Food Order Management System is a digital platform that organizes, processes, and prioritizes customer food orders efficiently to reduce delays and improve service.
+<p align="justify">ᴀɴ ᴏɴʟɪɴᴇ ꜰᴏᴏᴅ ᴏʀᴅᴇʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀ ᴅɪɢɪᴛᴀʟ ᴘʟᴀᴛꜰᴏʀᴍ ᴛʜᴀᴛ ᴏʀɢᴀɴɪᴢᴇꜱ, ᴘʀᴏᴄᴇꜱꜱᴇꜱ, ᴀɴᴅ ᴘʀɪᴏʀɪᴛɪᴢᴇꜱ ᴄᴜꜱᴛᴏᴍᴇʀ ꜰᴏᴏᴅ ᴏʀᴅᴇʀꜱ ᴇꜰꜰɪᴄɪᴇɴᴛʟʏ ᴛᴏ ʀᴇᴅᴜᴄᴇ ᴅᴇʟᴀʏꜱ ᴀɴᴅ ɪᴍᴘʀᴏᴠᴇ ꜱᴇʀᴠɪᴄᴇ.</p>
+
+## **<p align="center">⌁⌁⌁ 𝒯𝒽𝑒 3 𝐸𝓇𝓇𝑜𝓇𝓈 𝒶𝓃𝒹 1 𝒮𝑜𝓁𝓊𝓉𝒾𝑜𝓃 ⌁⌁⌁ </p>**
+#### **<p align="center">𝐵𝒶𝒷𝒶𝓈𝒶, 𝒥𝒾𝒶𝓃 𝒮𝓉𝑒𝓅𝒽𝑒𝓃 𝒟. </p>**
+#### **<p align="center">𝒞𝑜𝓃𝓉𝓇𝑒𝓇𝒶𝓈, 𝒵𝒶𝓇𝓇𝑒𝓃 𝐸. </p>**
+#### **<p align="center">𝒟𝒾𝓉𝒶, 𝑀𝒶𝓇𝒸 𝒜𝓃𝒹𝓇𝑒𝒾 𝐿. </p>**
 
 
-### Developers
-## **<p align="center">The 3 Errors and 1 Solution </p>**
 
-### Purpose
-
+### <p align="center"> ⸻⸻𓆩𝒫𝓊𝓇𝓅𝑜𝓈𝑒𓆪⸻⸻ </p>
 This project aims to:
 - Improve order handling during busy hours  
 - Reduce confusion and delays  
 - Allow prioritization of urgent orders  
 - Provide a simple and efficient ordering flow
 
-  ### System Concept
+### <p align="center"> ⸻𓆩𝒮𝓎𝓈𝓉𝑒𝓂 𝒞𝑜𝓃𝒸𝑒𝓅𝓉𓆪⸻ </p>
 
 This system uses basic programming logic and data structures:
 
