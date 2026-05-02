@@ -94,3 +94,17 @@ void viewHistory() {
         cout << "ID: " << o.id << ", Customer: " << o.customer_Name << ", Food: " << o.food_Item << "\n";
     }
 }
+void undoOrder() {
+    if (!history.empty()) {
+        Order o = history.top();
+        history.pop();
+        if (o.priority > 0) {
+            priorityQueue.push(o);
+        } else {
+            normalQueue.push(o);
+        }
+        cout << "Undid order: " << o.customer_Name << " - " << o.food_Item << "\n";
+    } else {
+        cout << "No orders to undo.\n";
+    }
+}
