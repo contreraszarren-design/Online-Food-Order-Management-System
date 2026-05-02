@@ -2,28 +2,28 @@
 
 <p align="justify">ᴀɴ ᴏɴʟɪɴᴇ ꜰᴏᴏᴅ ᴏʀᴅᴇʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀ ᴅɪɢɪᴛᴀʟ ᴘʟᴀᴛꜰᴏʀᴍ ᴛʜᴀᴛ ᴏʀɢᴀɴɪᴢᴇꜱ, ᴘʀᴏᴄᴇꜱꜱᴇꜱ, ᴀɴᴅ ᴘʀɪᴏʀɪᴛɪᴢᴇꜱ ᴄᴜꜱᴛᴏᴍᴇʀ ꜰᴏᴏᴅ ᴏʀᴅᴇʀꜱ ᴇꜰꜰɪᴄɪᴇɴᴛʟʏ ᴛᴏ ʀᴇᴅᴜᴄᴇ ᴅᴇʟᴀʏꜱ ᴀɴᴅ ɪᴍᴘʀᴏᴠᴇ ꜱᴇʀᴠɪᴄᴇ.</p>
 
-## **<p align="center">⌁⌁⌁ 𝒯𝒽𝑒 3 𝐸𝓇𝓇𝑜𝓇𝓈 𝒶𝓃𝒹 1 𝒮𝑜𝓁𝓊𝓉𝒾𝑜𝓃 ⌁⌁⌁ </p>**
+##
+### **<p align="center">⌁⌁⌁ 𝒯𝒽𝑒 3 𝐸𝓇𝓇𝑜𝓇𝓈 𝒶𝓃𝒹 1 𝒮𝑜𝓁𝓊𝓉𝒾𝑜𝓃 ⌁⌁⌁ </p>**
 #### **<p align="center">𝐵𝒶𝒷𝒶𝓈𝒶, 𝒥𝒾𝒶𝓃 𝒮𝓉𝑒𝓅𝒽𝑒𝓃 𝒟. </p>**
 #### **<p align="center">𝒞𝑜𝓃𝓉𝓇𝑒𝓇𝒶𝓈, 𝒵𝒶𝓇𝓇𝑒𝓃 𝐸. </p>**
 #### **<p align="center">𝒟𝒾𝓉𝒶, 𝑀𝒶𝓇𝒸 𝒜𝓃𝒹𝓇𝑒𝒾 𝐿. </p>**
 
-
-
+##
 ### <p align="center"> ⸻⸻𓆩𝒫𝓊𝓇𝓅𝑜𝓈𝑒𓆪⸻⸻ </p>
+
 This project aims to:
 - Improve order handling during busy hours  
 - Reduce confusion and delays  
 - Allow prioritization of urgent orders  
 - Provide a simple and efficient ordering flow
-
+##
 ### <p align="center"> ⸻𓆩𝒮𝓎𝓈𝓉𝑒𝓂 𝒞𝑜𝓃𝒸𝑒𝓅𝓉𓆪⸻ </p>
+ This system uses basic programming logic and data structures:
 
-This system uses basic programming logic and data structures:
-
-- **Queue (FIFO)** → Handles normal orders  
-- **Priority Queue** → Handles urgent orders first  
-- **Stack** → Stores last action for undo  
-- **Loops & Conditions** → Controls system flow
+ - **Queue (FIFO)** → Handles normal orders  
+ - **Priority Queue** → Handles urgent orders first  
+ - **Stack** → Stores last action for undo  
+ - **Loops & Conditions** → Controls system flow
 
   =============================================
 
