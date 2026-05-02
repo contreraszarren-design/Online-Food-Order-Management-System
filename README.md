@@ -155,4 +155,47 @@ void undoOrder() {
         cout << "No orders to undo.\n";
     }
 }
+int main() {
+    int choice;
+    do {
+        cout << "\nOnline Food Order Management System\n";
+        cout << "1. Add Normal Order\n";
+        cout << "2. Add Priority Order\n";
+        cout << "3. Process Order\n";
+        cout << "4. View Queues\n";
+        cout << "5. View History\n";
+        cout << "6. Undo Last Order\n";
+        cout << "7. Exit\n";
+        cout << "Enter choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                addNormal();
+                break;
+            case 2:
+                addPriority();
+                break;
+            case 3:
+                processOrder();
+                break;
+            case 4:
+                viewQueues();
+                break;
+            case 5:
+                viewHistory();
+                break;
+            case 6:
+                undoOrder();
+                break;
+            case 7:
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice.\n";
+        }
+    } while (choice != 7);
+
+    return 0;
+}
 ```
