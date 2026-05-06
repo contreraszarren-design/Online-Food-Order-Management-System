@@ -60,7 +60,7 @@ Normal order added.
 
 ## 𝓐𝓵𝓰𝓸𝓻𝓲𝓽𝓱𝓶 𝓔𝔁𝓹𝓵𝓪𝓷𝓪𝓽𝓲𝓸𝓷
 
-Adding Normal Order:
+## Adding Normal Order:
 
 ⟡ Create a new order
 
@@ -72,7 +72,7 @@ Adding Normal Order:
 
 ⟡ Add to normal queue
 
-Adding Priority Order:
+## Adding Priority Order:
 
 ⟡ Create a new order
 
@@ -82,7 +82,7 @@ Adding Priority Order:
 
 ⟡ Add to priority queue
 
-Processing Order:
+## Processing Order:
 
 ⟡ If priority queue is not empty:
 
@@ -94,19 +94,19 @@ Processing Order:
 
 ⟡ Store processed order in history stack
 
-Viewing Queues:
+## Viewing Queues:
 
 ⟡ Copy queues into temporary variables
 
 ⟡ Display all elements without removing original data
 
-Viewing History:
+## Viewing History:
 
 ⟡ Copy stack into a temporary stack
 
 ⟡ Display all processed orders
 
-Undo Order:
+## Undo Order:
 
 ⟡ Get the last processed order from stack
 
@@ -116,13 +116,13 @@ Undo Order:
 
 ## 𝓘𝓽𝓮𝓻𝓪𝓽𝓲𝓿𝓮 𝓿𝓼 𝓡𝓮𝓬𝓾𝓻𝓼𝓲𝓿𝓮 𝓒𝓸𝓶𝓹𝓪𝓻𝓲𝓼𝓸𝓷
 
-Which is faster?
+## Which is faster?
 
-Iteration is generally faster because it does not involve function call overhead like recursion.
+⟡ Iteration is generally faster because it does not involve function call overhead like recursion.
 
-Which is easier to understand?
+## Which is easier to understand?
 
-Iteration is easier to understand in this system because it follows a step-by-step process using loops.
+⟡ Iteration is easier to understand in this system because it follows a step-by-step process using loops.
 
 ## 𝓓𝓮𝓼𝓲𝓰𝓷 𝓓𝓮𝓬𝓲𝓼𝓲𝓸𝓷𝓼
 
