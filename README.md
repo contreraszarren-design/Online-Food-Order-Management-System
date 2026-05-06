@@ -87,11 +87,11 @@ Processing Order:
 ⟡ If priority queue is not empty:
 
   - Process highest priority order
-  - 
+
 ⟡ Else if normal queue is not empty:
 
   - Process first normal order
-  - 
+
 ⟡ Store processed order in history stack
 
 Viewing Queues:
