@@ -117,9 +117,11 @@ Undo Order:
 ## 𝓘𝓽𝓮𝓻𝓪𝓽𝓲𝓿𝓮 𝓿𝓼 𝓡𝓮𝓬𝓾𝓻𝓼𝓲𝓿𝓮 𝓒𝓸𝓶𝓹𝓪𝓻𝓲𝓼𝓸𝓷
 
 Which is faster?
+
 Iteration is generally faster because it does not involve function call overhead like recursion.
 
 Which is easier to understand?
+
 Iteration is easier to understand in this system because it follows a step-by-step process using loops.
 
 ## 𝓓𝓮𝓼𝓲𝓰𝓷 𝓓𝓮𝓬𝓲𝓼𝓲𝓸𝓷𝓼
