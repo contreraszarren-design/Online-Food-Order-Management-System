@@ -58,161 +58,128 @@ Enter food item: Your Food
 
 Normal order added.
 
-# ♡(◕‿◕)♡ 𝓢𝓞𝓤𝓡𝓒𝓔 𝓒𝓞𝓓𝓔 ♡(◕‿◕)♡
+🍔 Online Food Order Management System
 
+# Project Title
 
-```cpp
-#include <iostream>
-#include <queue>
-#include <stack>
-#include <string>
-using namespace std;
+Online Food Order Management System
 
-struct Order {
-    int id;
-    string customer_Name;
-    string food_Item;
-    int priority;
-};
+---
 
-struct CompareOrder {
-    bool operator()(const Order &a, const Order &b) const {
-        return a.priority < b.priority;
-    }
-};
+# Problem Description
 
-queue<Order> normalQueue;
-priority_queue<Order, vector<Order>, CompareOrder> priorityQueue;
-stack<Order> history;
+This project aims to solve the problem of managing customer orders efficiently in a food ordering system. In real-life situations, some orders need to be prioritized (e.g., VIP customers or urgent requests), while others follow a normal queue. Without a proper system, orders may be delayed, disorganized, or processed unfairly.
 
-int orderID = 1;
+Our system ensures that:
 
+- Normal orders are processed in order (FIFO)
+- Priority orders are handled first
+- Processed orders can be undone if needed
 
-void addNormal() {
-    Order o;
-    o.id = orderID++;
-    cout << "Enter customer name: ";
-    cin >> o.customer_Name;
-    cout << "Enter food item: ";
-    cin >> o.food_Item;
-    o.priority = 0;
+---
 
-    normalQueue.push(o);
-    cout << "Normal order added.\n";
-}
+# Data Structures Used
 
-void addPriority() {
-    Order o;
-    o.id = orderID++;
-    cout << "Enter customer name: ";
-    cin >> o.customer_Name;
-    cout << "Enter food item: ";
-    cin >> o.food_Item;
-    cout << "Enter priority (higher number = higher priority): ";
-    cin >> o.priority;
+● Queue (Normal Queue)
 
-    priorityQueue.push(o);
-    cout << "Priority order added.\n";
-}
+What it is:
+A linear data structure that follows FIFO (First In, First Out).
 
-void processOrder() {
-    if (!priorityQueue.empty()) {
-        Order o = priorityQueue.top();
-        priorityQueue.pop();
-        history.push(o);
-        cout << "Processed priority order: " << o.customer_Name << " - " << o.food_Item << "\n";
-    } else if (!normalQueue.empty()) {
-        Order o = normalQueue.front();
-        normalQueue.pop();
-        history.push(o);
-        cout << "Processed normal order: " << o.customer_Name << " - " << o.food_Item << "\n";
-    } else {
-        cout << "No orders to process.\n";
-    }
-}
+Why we used it:
+We used a queue to manage normal customer orders so that the first customer to order is the first to be served, ensuring fairness.
 
-void viewQueues() {
-    cout << "Normal Queue:\n";
-    queue<Order> temp = normalQueue;
-    while (!temp.empty()) {
-        Order o = temp.front();
-        temp.pop();
-        cout << "ID: " << o.id << ", Customer: " << o.customer_Name << ", Food: " << o.food_Item << "\n";
-    }
+---
 
-    cout << "Priority Queue:\n";
-    priority_queue<Order, vector<Order>, CompareOrder> tempP = priorityQueue;
-    while (!tempP.empty()) {
-        Order o = tempP.top();
-        tempP.pop();
-        cout << "ID: " << o.id << ", Customer: " << o.customer_Name << ", Food: " << o.food_Item << ", Priority: " << o.priority << "\n";
-    }
-}
+● Priority Queue
 
-void viewHistory() {
-    cout << "Order History:\n";
-    stack<Order> temp = history;
-    while (!temp.empty()) {
-        Order o = temp.top();
-        temp.pop();
-        cout << "ID: " << o.id << ", Customer: " << o.customer_Name << ", Food: " << o.food_Item << "\n";
-    }
-}
-void undoOrder() {
-    if (!history.empty()) {
-        Order o = history.top();
-        history.pop();
-        if (o.priority > 0) {
-            priorityQueue.push(o);
-        } else {
-            normalQueue.push(o);
-        }
-        cout << "Undid order: " << o.customer_Name << " - " << o.food_Item << "\n";
-    } else {
-        cout << "No orders to undo.\n";
-    }
-}
-int main() {
-    int choice;
-    do {
-        cout << "\nOnline Food Order Management System\n";
-        cout << "1. Add Normal Order\n";
-        cout << "2. Add Priority Order\n";
-        cout << "3. Process Order\n";
-        cout << "4. View Queues\n";
-        cout << "5. View History\n";
-        cout << "6. Undo Last Order\n";
-        cout << "7. Exit\n";
-        cout << "Enter choice: ";
-        cin >> choice;
+What it is:
+A special type of queue where elements are processed based on priority instead of arrival time.
 
-        switch (choice) {
-            case 1:
-                addNormal();
-                break;
-            case 2:
-                addPriority();
-                break;
-            case 3:
-                processOrder();
-                break;
-            case 4:
-                viewQueues();
-                break;
-            case 5:
-                viewHistory();
-                break;
-            case 6:
-                undoOrder();
-                break;
-            case 7:
-                cout << "Exiting...\n";
-                break;
-            default:
-                cout << "Invalid choice.\n";
-        }
-    } while (choice != 7);
+Why we used it:
+We used a priority queue to handle urgent or VIP orders. Orders with higher priority values are processed first.
 
-    return 0;
-}
-```
+---
+
+● Stack
+
+What it is:
+A linear data structure that follows LIFO (Last In, First Out).
+
+Why we used it:
+We used a stack to store processed orders so that we can implement an undo feature. The most recent processed order can be reversed easily.
+
+---
+
+# Algorithm Explanation
+
+Adding Normal Order:
+
+- Create a new order
+- Assign a unique ID
+- Input customer name and food item
+- Set priority to 0
+- Add to normal queue
+
+Adding Priority Order:
+
+- Create a new order
+- Assign a unique ID
+- Input details and priority value
+- Add to priority queue
+
+Processing Order:
+
+- If priority queue is not empty:
+  - Process highest priority order
+- Else if normal queue is not empty:
+  - Process first normal order
+- Store processed order in history stack
+
+Viewing Queues:
+
+- Copy queues into temporary variables
+- Display all elements without removing original data
+
+Viewing History:
+
+- Copy stack into a temporary stack
+- Display all processed orders
+
+Undo Order:
+
+- Get the last processed order from stack
+- Remove it from history
+- Return it to appropriate queue (priority or normal)
+
+---
+
+# Iterative vs Recursive Comparison
+
+Which is faster?
+Iteration is generally faster because it does not involve function call overhead like recursion.
+
+Which is easier to understand?
+Iteration is easier to understand in this system because it follows a step-by-step process using loops.
+
+Conclusion:
+We used iteration instead of recursion because our system is menu-driven and does not require repeated self-calling functions.
+
+---
+
+# Design Decisions
+
+- We used C++ STL (queue, priority_queue, stack) instead of manual implementation to make the code cleaner and more efficient.
+- Priority queue was chosen to handle urgent orders dynamically.
+- Stack was used to implement undo functionality easily.
+- We used a menu-driven interface for simplicity and user interaction.
+
+Trade-offs:
+
+- Using STL hides the internal implementation, but it makes development faster.
+- The system is console-based, so it lacks a graphical interface.
+
+---
+
+# Acknowledgement
+
+We would like to thank our instructor for teaching us the fundamentals of data structures, especially queues, stacks, and priority queues. These concepts helped us build and understand this system. We also used additional references and online resources to improve our implementation.
