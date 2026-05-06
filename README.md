@@ -1,6 +1,6 @@
 # <p align="center"> ✧･ﾟ: *✧･ﾟ:* 𝓞𝓷𝓵𝓲𝓷𝓮 𝓕𝓸𝓸𝓭 𝓞𝓻𝓭𝓮𝓻𝓲𝓷𝓰 𝓢𝔂𝓼𝓽𝓮𝓶 ✧･ﾟ: *✧･ﾟ:* </p>
 
-<p align="justify">ᴀɴ ᴏɴʟɪɴᴇ ꜰᴏᴏᴅ ᴏʀᴅᴇʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ꜱʏꜱᴛᴇᴍ ɪꜱ ᴀ ᴅɪɢɪᴛᴀʟ ᴘʟᴀᴛꜰᴏʀᴍ ᴛʜᴀᴛ ᴏʀɢᴀɴɪᴢᴇꜱ, ᴘʀᴏᴄᴇꜱꜱᴇꜱ, ᴀɴᴅ ᴘʀɪᴏʀɪᴛɪᴢᴇꜱ ᴄᴜꜱᴛᴏᴍᴇʀ ꜰᴏᴏᴅ ᴏʀᴅᴇʀꜱ ᴇꜰꜰɪᴄɪᴇɴᴛʟʏ ᴛᴏ ʀᴇᴅᴜᴄᴇ ᴅᴇʟᴀʏꜱ ᴀɴᴅ ɪᴍᴘʀᴏᴠᴇ ꜱᴇʀᴠɪᴄᴇ.</p>
+<p align="justify">This project aims to solve the problem of managing customer orders efficiently in a food ordering system. In real-life situations, some orders need to be prioritized (e.g., VIP customers or urgent requests), while others follow a normal queue. Without a proper system, orders may be delayed, disorganized, or processed unfairly.</p>
 
 ##
 ### **<p align="center">⌁⌁⌁ 𝒯𝒽𝑒 3 𝐸𝓇𝓇𝑜𝓇𝓈 𝒶𝓃𝒹 1 𝒮𝑜𝓁𝓊𝓉𝒾𝑜𝓃 ⌁⌁⌁ </p>**
@@ -58,102 +58,63 @@ Enter food item: Your Food
 
 Normal order added.
 
-🍔 Online Food Order Management System
-
-# Project Title
-
-Online Food Order Management System
-
----
-
-# Problem Description
-
-This project aims to solve the problem of managing customer orders efficiently in a food ordering system. In real-life situations, some orders need to be prioritized (e.g., VIP customers or urgent requests), while others follow a normal queue. Without a proper system, orders may be delayed, disorganized, or processed unfairly.
-
-Our system ensures that:
-
-- Normal orders are processed in order (FIFO)
-- Priority orders are handled first
-- Processed orders can be undone if needed
-
----
-
-# Data Structures Used
-
-● Queue (Normal Queue)
-
-What it is:
-A linear data structure that follows FIFO (First In, First Out).
-
-Why we used it:
-We used a queue to manage normal customer orders so that the first customer to order is the first to be served, ensuring fairness.
-
----
-
-● Priority Queue
-
-What it is:
-A special type of queue where elements are processed based on priority instead of arrival time.
-
-Why we used it:
-We used a priority queue to handle urgent or VIP orders. Orders with higher priority values are processed first.
-
----
-
-● Stack
-
-What it is:
-A linear data structure that follows LIFO (Last In, First Out).
-
-Why we used it:
-We used a stack to store processed orders so that we can implement an undo feature. The most recent processed order can be reversed easily.
-
----
-
-# Algorithm Explanation
+## 𝓐𝓵𝓰𝓸𝓻𝓲𝓽𝓱𝓶 𝓔𝔁𝓹𝓵𝓪𝓷𝓪𝓽𝓲𝓸𝓷
 
 Adding Normal Order:
 
-- Create a new order
-- Assign a unique ID
-- Input customer name and food item
-- Set priority to 0
-- Add to normal queue
+⟡ Create a new order
+
+⟡ Assign a unique ID
+
+⟡ Input customer name and food item
+
+⟡ Set priority to 0
+
+⟡ Add to normal queue
 
 Adding Priority Order:
 
-- Create a new order
-- Assign a unique ID
-- Input details and priority value
-- Add to priority queue
+⟡ Create a new order
+
+⟡ Assign a unique ID
+
+⟡ Input details and priority value
+
+⟡ Add to priority queue
 
 Processing Order:
 
-- If priority queue is not empty:
+⟡ If priority queue is not empty:
+
   - Process highest priority order
-- Else if normal queue is not empty:
+  - 
+⟡ Else if normal queue is not empty:
+
   - Process first normal order
-- Store processed order in history stack
+  - 
+⟡ Store processed order in history stack
 
 Viewing Queues:
 
-- Copy queues into temporary variables
-- Display all elements without removing original data
+⟡ Copy queues into temporary variables
+
+⟡ Display all elements without removing original data
 
 Viewing History:
 
-- Copy stack into a temporary stack
-- Display all processed orders
+⟡ Copy stack into a temporary stack
+
+⟡ Display all processed orders
 
 Undo Order:
 
-- Get the last processed order from stack
-- Remove it from history
-- Return it to appropriate queue (priority or normal)
+⟡ Get the last processed order from stack
 
----
+⟡ Remove it from history
 
-# Iterative vs Recursive Comparison
+⟡ Return it to appropriate queue (priority or normal)
+
+## 𝓘𝓽𝓮𝓻𝓪𝓽𝓲𝓿𝓮 𝓿𝓼 𝓡𝓮𝓬𝓾𝓻𝓼𝓲𝓿𝓮 𝓒𝓸𝓶𝓹𝓪𝓻𝓲𝓼𝓸𝓷
 
 Which is faster?
 Iteration is generally faster because it does not involve function call overhead like recursion.
@@ -161,25 +122,16 @@ Iteration is generally faster because it does not involve function call overhead
 Which is easier to understand?
 Iteration is easier to understand in this system because it follows a step-by-step process using loops.
 
-Conclusion:
-We used iteration instead of recursion because our system is menu-driven and does not require repeated self-calling functions.
+## 𝓓𝓮𝓼𝓲𝓰𝓷 𝓓𝓮𝓬𝓲𝓼𝓲𝓸𝓷𝓼
 
----
+⟡ We used C++ STL (queue, priority_queue, stack) instead of manual implementation to make the code cleaner and more efficient.
 
-# Design Decisions
+⟡ Priority queue was chosen to handle urgent orders dynamically.
 
-- We used C++ STL (queue, priority_queue, stack) instead of manual implementation to make the code cleaner and more efficient.
-- Priority queue was chosen to handle urgent orders dynamically.
-- Stack was used to implement undo functionality easily.
-- We used a menu-driven interface for simplicity and user interaction.
+⟡ Stack was used to implement undo functionality easily.
 
-Trade-offs:
+⟡ We used a menu-driven interface for simplicity and user interaction.
 
-- Using STL hides the internal implementation, but it makes development faster.
-- The system is console-based, so it lacks a graphical interface.
+## 𝓐𝓬𝓴𝓷𝓸𝓵𝓮𝓭𝓰𝓮𝓶𝓮𝓷𝓽
 
----
-
-# Acknowledgement
-
-We would like to thank our instructor for teaching us the fundamentals of data structures, especially queues, stacks, and priority queues. These concepts helped us build and understand this system. We also used additional references and online resources to improve our implementation.
+<p align="justify">We would like to thank our instructor for teaching us the fundamentals of data structures, especially queues, stacks, and priority queues. These concepts helped us build and understand this system. We also used additional references and online resources to improve our implementation.</p>
